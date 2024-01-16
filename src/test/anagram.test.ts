@@ -12,4 +12,8 @@ describe("Anagram", () => {
   test("Should return all anagrams of ab", () => {
     expect(Anagram.handler("ab")).toBe("ab ba");
   });
+
+  test("Should return all anagrams of abc", () => {
+    expect(Anagram.handler("abc")).toBe("abc acb bac bca cab cba");
+  });
 });
