@@ -16,4 +16,10 @@ describe("Anagram", () => {
   test("Should return all anagrams of abc", () => {
     expect(Anagram.handler("abc")).toBe("abc acb bac bca cab cba");
   });
+
+  test("Should return all anagrams of abcd", () => {
+    expect(Anagram.handler("abcd")).toBe(
+      "abcd abdc acbd acdb adbc adcb bacd badc bcad bcda bdac bdca cabd cadb cbad cbda cdab cdba dabc dacb dbac dbca dcab dcba"
+    );
+  });
 });
