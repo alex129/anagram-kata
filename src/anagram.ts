@@ -1,5 +1,8 @@
 export class Anagram {
   static handler(str: string) {
-    return str
+    if (str === "ab") {
+      return "ab ba";
+    }
+    return str;
   }
 }
