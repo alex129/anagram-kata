@@ -10,14 +10,14 @@ export class Anagram {
 
     const anagrams: string[] = [];
     for (let letterIndex = 0; letterIndex < str.length; letterIndex++) {
-      const curentLetter = str[letterIndex];
+      const currentLetter = str[letterIndex];
       const remainingLetters = `${str.slice(0, letterIndex)}${str.slice(
         letterIndex + 1
       )}`;
 
       const subAnagrams = Anagram.generate(remainingLetters);
       for (const subAnagram of subAnagrams) {
-        anagrams.push(`${curentLetter}${subAnagram}`);
+        anagrams.push(`${currentLetter}${subAnagram}`);
       }
     }
 
