@@ -22,4 +22,10 @@ describe("Anagram", () => {
       "abcd abdc acbd acdb adbc adcb bacd badc bcad bcda bdac bdca cabd cadb cbad cbda cdab cdba dabc dacb dbac dbca dcab dcba"
     );
   });
+
+  test("Should return all anagrams of biro", () => {
+    expect(Anagram.handler("biro")).toBe(
+      "biro bior brio broi boir bori ibro ibor irbo irob iobr iorb rbio rboi ribo riob robi roib obir obri oibr oirb orbi orib"
+    );
+  });
 });
